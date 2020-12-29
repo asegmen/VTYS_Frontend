@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"],
+      "services/*": ["src/services/*"],
+      "components/*": ["src/components/*"],
+      "assets/*": ["src/assets/*"],
+      "helpers/*": ["src/helpers/*"],
+      "utils/*": ["src/utils/*"],
+      "static/*": ["static/*"],
+      "mock/*": ["mock/*"],
+      "store/*": ["store/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

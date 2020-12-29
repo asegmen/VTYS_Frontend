@@ -1,0 +1,30 @@
+@mixin breakpoint($point) {
+  @if $point == large-web {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $point == web {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == only-tablet {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+}
+
+/* 
+    use:
+    @include breakpoint(large-web) {
+        color: red;
+    }
+*/

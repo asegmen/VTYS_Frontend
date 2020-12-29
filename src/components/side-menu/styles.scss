@@ -1,0 +1,38 @@
+@import 'src/assets/stylesheets/variables';
+@import 'src/assets/stylesheets/responsive';
+
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: $color-white;
+  box-shadow: 0px 0px 4px 0px rgba($color-black-pearl,0.7);
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  padding: 30px 0;
+  text-align: center;
+  font: 700 40px/48px $open-sans;
+  color: $color-black-pearl;
+  border-bottom: 1px solid rgba($color-black-pearl, 0.4);
+  position: relative;
+
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  a {
+    display: block;
+    text-decoration: none;
+    color: $color-black-pearl;
+    font: 600 16px/24px $open-sans;
+    padding: 10px;
+    border-bottom: 1px solid rgba($color-black-pearl, 0.2);;
+  }
+}

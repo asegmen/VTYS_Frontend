@@ -1,0 +1,62 @@
+@import 'src/assets/stylesheets/variables';
+@import 'src/assets/stylesheets/responsive';
+
+.title {
+  font: 700 24px/32px $open-sans;
+  color: $color-black-pearl;
+  padding: 0 0 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.label {
+  font: 600 16px/24px $open-sans;
+  color: $color-black-pearl;
+  padding-bottom: 8px;
+  display: block;
+  width: 100%;
+}
+
+.input {
+  max-width: 600px;
+  border: 1px solid #cccccc;
+  transition: all .2s ease-in-out;
+  font: 16px/24px $open-sans;
+  color: $color-black-pearl;
+  padding: 0 5px;
+  height: 40px;
+  outline: none;
+  &:focus, &:active {
+    border-color: $color-black-pearl;
+  }
+}
+
+.button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  max-width: 300px;
+  height: 40px;
+  text-align: center;
+  font: 600 16px/24px $open-sans;
+  padding: 8px;
+  background-color: $color-black-pearl;
+  color: $color-white;
+  border:none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease-in-out;
+  &:hover {
+    box-shadow: 0px 0px 7px 0px rgba($color-black-pearl,0.5);
+  }
+}

@@ -1,0 +1,14 @@
+@import 'src/assets/stylesheets/variables';
+@import 'src/assets/stylesheets/responsive';
+
+.wrapper {
+  position: fixed;
+  width: calc(100% - 300px);
+  right: 0;
+  top: 0;
+  overflow-y: auto;
+  height: 100%;
+  padding: 100px 40px 10px;
+  background-color: $color-white;
+  box-sizing: border-box;
+}

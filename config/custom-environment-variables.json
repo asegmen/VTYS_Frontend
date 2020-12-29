@@ -1,0 +1,13 @@
+{
+  "env": "CONFIG_ENV",
+  "app": {
+    "hostname": "",
+    "canonicalHost": ""
+  },
+  "apps": {
+    "api": {
+      "hostname": "",
+      "ref": ""
+    }
+  }
+}
